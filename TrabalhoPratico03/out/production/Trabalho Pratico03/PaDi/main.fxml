@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaDi.Controller">
+   <children>
+      <AnchorPane prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: #202937;">
+         <children>
+            <Label layoutX="198.0" layoutY="75.0" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="criarButton" layoutX="82.0" layoutY="146.0" mnemonicParsing="false" onAction="#criarPasse" prefHeight="40.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="CRIAR UM NOVO PASSE" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Button fx:id="carregarButton"  onMouseClicked="#carregar" layoutX="82.0" layoutY="206.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="CARREGAR UM PASSE" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Button layoutX="83.0" layoutY="268.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="VALIDAR UM PASSE" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Button fx:id="pagarButton" onMouseClicked="#pagar" layoutX="315.0" layoutY="146.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="PAGAR UMA VIAGEM" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Button layoutX="314.0" layoutY="206.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="ALTERAR DADOS DE UM PASSE" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Button fx:id="passaSaldo" onMouseClicked="#trasferir" layoutX="316.0" layoutY="268.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" style="-fx-background-color: white; -fx-background-radius: 0px;" text="TRANSFERIR SALDO" textFill="#6a6a6a">
+               <font>
+                  <Font name="Avenir Next Bold" size="10.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="132.0" layoutY="83.0" style="&#10;" text="PaDi - GERENCIADOR DE EPASSES" textAlignment="CENTER" textFill="#26aac8" wrapText="false">
+               <font>
+                  <Font name="Avenir Next Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
