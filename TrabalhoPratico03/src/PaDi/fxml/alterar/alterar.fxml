@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaDi.Controller">
+   <children>
+      <AnchorPane prefHeight="405.0" prefWidth="600.0" style="-fx-background-color: #202937 #202937 #202937 #202937 #202937 #202937 #202937 #202937;">
+         <children>
+            <TextField fx:id="nome" layoutX="83.0" layoutY="162.0" prefHeight="27.0" prefWidth="460.0" promptText="Digite seu nome" style="-fx-background-color: white; -fx-background-radius: 0px;">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="83.0" layoutY="143.0" text="Nome do Epass que deseja alterar" textFill="#e9e9e9">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="morada" layoutX="83.0" layoutY="305.0" prefHeight="27.0" prefWidth="460.0" promptText="Digite nova morada" style="-fx-background-color: white; -fx-background-radius: 0px;">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="83.0" layoutY="286.0" text="Alterar Morada" textFill="#e9e9e9">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="83.0" layoutY="210.0" prefHeight="27.0" prefWidth="460.0" promptText="Digite novo email" style="-fx-background-color: white; -fx-background-radius: 0px;">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="83.0" layoutY="191.0" text="Alterar Email" textFill="#e9e9e9">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tel" layoutX="83.0" layoutY="257.0" prefHeight="27.0" prefWidth="460.0" promptText="Digite novo telefone" style="-fx-background-color: white; -fx-background-radius: 0px;">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="83.0" layoutY="238.0" text="Alterar Telefone" textFill="#e9e9e9">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="49.0" text="ALTERAR DADOS" textFill="#26aac8">
+               <font>
+                  <Font name="Avenir Next Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="voltarButton" layoutX="79.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#voltarMain" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: none; -fx-background-radius: 0px;" text="◀︎ VOLTAR" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Avenir Next Bold" size="9.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="criar" layoutX="82.0" layoutY="347.0" mnemonicParsing="false" onAction="#alterarEpass" onMouseClicked="#alterarEpass" style="-fx-background-color: white; -fx-background-radius: 0px;" text="ALTERAR">
+               <font>
+                  <Font name="Avenir Next Bold" size="9.0" />
+               </font>
+            </Button>
+            <Label fx:id="infoSucess" layoutX="361.0" layoutY="347.0" style="-fx-background-color: GREEN; -fx-label-padding: 1px 20px;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codigo" layoutX="83.0" layoutY="116.0" prefHeight="27.0" prefWidth="460.0" promptText="Digite seu código" style="-fx-background-color: white; -fx-background-radius: 0px;">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="83.0" layoutY="96.0" text="Código do Epass que deseja alterar" textFill="#e9e9e9">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
